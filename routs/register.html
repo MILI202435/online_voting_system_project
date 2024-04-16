@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>ONLINE VOTING SYSTEM-Register</title> '
+        <link rel="stylesheet" href="../CSS/stylesheet.css">                        
+      
+    </head>
+    <body>
+        <style>
+
+         #Address{
+            width: 30%;
+         }  
+         #imagepart{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 29%;
+        } 
+        #role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 29%;
+        }
+        #role select{
+            border-radius: 5px;
+            padding: 10px;
+        }
+        </style>
+
+        <h1>ONLINE VOTING SYSTEM</h1>
+        <hr>
+        <h2>Registration</h2>
+        <form action="../Api/register.php" method="post">
+        </form>
+        <input type="text" name="Name " placeholder="Enter name"> 
+      <input type="number" name="mobile" placeholder="Enter mobile"> <br> <br>
+      <input type="password" name="password" placeholder="Password">
+      <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+      <input id="address" type="text" name="address" placeholder="address"><br><br>
+      <center>
+      <div id="imagepart">
+        Upload image:<input type="File" name="photo">
+    </div>
+    <br>
+    <div id="role">
+        Select your role:<select name="role" >  
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+            </select>
+    </div>
+      </center>
+      <br>
+        <button style="padding: 5px;
+                       font-size: 15px;
+                       background-color:rgb(127, 208, 255);
+                       color: black;
+                       border-radius: 5px;">Register</button><br><br>
+       Already user? <a href="../index.html">Login here</a>
+    </form>
+</body>
+</html>
+
